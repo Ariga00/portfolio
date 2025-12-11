@@ -1,0 +1,280 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #e0e0e0;
+  background-color: #111313;
+  
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #00ffff;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  color: #00ffff;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+}
+
+/* Hero section */
+#hero {
+  background-color: #111313;
+  padding: 4rem 2rem;
+  text-align: center;
+  border: 3px solid #00ffff;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #58f5ed;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #77eee8;
+}
+
+/* Sections */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+   border: 3px solid #00ffff;
+
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+/* About */
+#about p {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background-color: #3a3a3a;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: 3px solid #00ffff;
+}
+
+.skill-category h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skill-category ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #3a3a3a;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+   border: 3px solid #00ffff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.project-card p {
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+/* Education */
+.education-item {
+  background-color: #3a3a3a;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: 3px solid #00ffff;
+}
+
+.education-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+.education-item ul {
+  margin-top: 1rem;
+}
+
+.education-item ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact */
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #00ffff;
+  color: #2a2a2a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-right: 1rem;
+}
+
+.btn:hover {
+  background-color: #00cccc;
+}
+
+.buttons {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+
+}
